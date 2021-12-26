@@ -1,0 +1,35 @@
+@import "styles/media.pcss";
+
+$blue: #056ef0;
+
+.app {
+  background-color: $blue;
+
+  @media (--sm) {
+    color: red;
+
+    &::before {
+      content: "sm";
+    }
+  }
+
+  @media (--md) {
+    &::before {
+      content: "md";
+    }
+  }
+
+  @media (--lg) {
+    &::before {
+      content: "lg";
+    }
+  }
+
+  @media (--xl) {
+    color: white;
+
+    &::before {
+      content: "xl";
+    }
+  }
+}
